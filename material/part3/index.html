@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>School Timetable</title>
+
+        <style>
+            body {
+                background-color: lightcoral;
+                background-image: url('./cattern.png');
+            }
+
+            tr {
+                background-color: #FFFEF5;
+
+                overflow: hidden;
+                height: 10vh;
+                white-space: nowrap;
+            }
+
+            td {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: lightcoral;
+            }
+
+            th {
+                font-weight: normal;
+            }
+
+            table {
+                width: 50%;
+                background-color: lightslategray;
+                border-color: lightcoral;
+                border-width: thick;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .rowheader {
+                overflow: hidden;
+                height: 5vh;
+                white-space: nowrap;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+            <table border=1>
+                <tr class="rowheader">
+                    <th></th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <th>9:00 - 10:40</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td rowspan=2>Web Design and Programming</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>10:50 - 12:30</th>
+                    <td></td>
+                    <td>Interaction Design</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>13:20 - 15:00</th>
+                    <td rowspan=2>Linear Algebra</td>
+                    <td></td>
+                    <td rowspan=2>Calculus II</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>15:10 - 16:50</th>
+                    <td></td>
+                    <td></td>
+                    <td>Japanese Language III</td>
+                </tr>
+                <tr>
+                    <th>18:50 - 20:30</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+    </html>
